@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="announcements">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="news" minOccurs="1" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="news">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Sno" minOccurs="1" maxOccurs="1"/>
+<xs:element ref="date" minOccurs="1" maxOccurs="1"/>
+<xs:element ref="info" minOccurs="1" maxOccurs="1"/>
+</xs:sequence>
+</xs:complexType> 
+</xs:element>
+<xs:element name="Sno" type="xs.string"/>
+<xs:element name="date" type="xs.string"/>
+<xs:element name="info" type="xs.string"/>
+</xs:schema>

@@ -1,0 +1,5 @@
+<!ELEMENT ANNOUNCEMENTS(news)>
+<!ELEMENT news(Sno,date,info)>
+<!ELEMENT Sno(#PCDATA)>
+<!ELEMENT date(#PCDATA)>
+<!ELEMENT info(#PCDATA)>
